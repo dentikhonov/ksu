@@ -25,7 +25,7 @@ function App() {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Metrika />
       <Header onRequestClick={() => setModalOpen(true)} />
       <Routes>

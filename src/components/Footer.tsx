@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
+const BASE = import.meta.env.BASE_URL;
+
 export default function Footer() {
   return (
     <footer className="footer" id="footer">
@@ -28,16 +30,16 @@ export default function Footer() {
           <p className="footer__column-title">Меню</p>
           <ul>
             <li>
-              <a href="/#catalog">Каталог</a>
+              <a href={`${BASE}#catalog`}>Каталог</a>
             </li>
             <li>
               <Link to="/portfolio">Портфолио</Link>
             </li>
             <li>
-              <a href="/#looks">Образы</a>
+              <a href={`${BASE}#looks`}>Образы</a>
             </li>
             <li>
-              <a href="/#features">Пошив</a>
+              <a href={`${BASE}#features`}>Пошив</a>
             </li>
           </ul>
         </div>
@@ -46,16 +48,16 @@ export default function Footer() {
           <p className="footer__column-title">Каталог</p>
           <ul>
             <li>
-              <a href="/#catalog">Женская форма</a>
+              <a href={`${BASE}#catalog`}>Женская форма</a>
             </li>
             <li>
-              <a href="/#catalog">Мужская форма</a>
+              <a href={`${BASE}#catalog`}>Мужская форма</a>
             </li>
             <li>
-              <a href="/#catalog">Этно-форма</a>
+              <a href={`${BASE}#catalog`}>Этно-форма</a>
             </li>
             <li>
-              <a href="/#catalog">Сервисная форма</a>
+              <a href={`${BASE}#catalog`}>Сервисная форма</a>
             </li>
           </ul>
         </div>

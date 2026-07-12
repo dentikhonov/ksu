@@ -2,12 +2,15 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
+// абсолютные якоря строятся от базового пути (на GitHub Pages это /uniforma/)
+const BASE = import.meta.env.BASE_URL;
+
 const NAV_LINKS = [
-  { label: "Каталог", href: "/#catalog", route: false },
+  { label: "Каталог", href: `${BASE}#catalog`, route: false },
   { label: "Портфолио", href: "/portfolio", route: true },
-  { label: "Образы", href: "/#looks", route: false },
-  { label: "Пошив", href: "/#features", route: false },
-  { label: "Контакты", href: "/#footer", route: false },
+  { label: "Образы", href: `${BASE}#looks`, route: false },
+  { label: "Пошив", href: `${BASE}#features`, route: false },
+  { label: "Контакты", href: `${BASE}#footer`, route: false },
 ];
 
 interface HeaderProps {
