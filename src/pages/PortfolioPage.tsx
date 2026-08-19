@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import dressImg from "../assets/images/dress-beige-collar.jpeg";
 import menEthnoImg from "../assets/images/men-shirt-ethno.jpeg";
 import apronFrontImg from "../assets/images/apron-beige-front.jpeg";
@@ -7,6 +8,7 @@ import hostessImg from "../assets/images/woman-hostess-stripe.jpeg";
 import campShirtImg from "../assets/images/men-camp-shirt-brown.jpeg";
 import ethnoTeamImg from "../assets/images/ethno-team.jpeg";
 import kaftanImg from "../assets/images/khaki-kaftan-women.jpeg";
+import newUniformImg from "../assets/images/uniform-beige-ruffle.jpeg";
 import Reveal from "../components/Reveal";
 import Lightbox from "../components/Lightbox";
 import "./PortfolioPage.css";
@@ -22,6 +24,12 @@ interface Work {
 }
 
 const WORKS: Work[] = [
+  {
+    image: newUniformImg,
+    title: "Фартук-сарафан с рюшами",
+    venue: "Новый образ",
+    tag: "Зал",
+  },
   {
     image: apronFrontImg,
     title: "Фартук-сарафан с рюшами",
