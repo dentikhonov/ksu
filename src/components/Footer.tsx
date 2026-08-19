@@ -66,7 +66,7 @@ export default function Footer() {
           <p className="footer__column-title">Контакты</p>
           <ul>
             <li>
-              <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+              <a href="tel:+79778822864">+7 (977) 882-28-64</a>
             </li>
             <li>
               <a href="mailto:hello@uniforma.ru">hello@uniforma.ru</a>
