@@ -44,8 +44,8 @@ export default function Header({ onRequestClick }: HeaderProps) {
     <>
       <header className="header">
         <div className="container header__inner">
-          <Link to="/" className="header__logo">
-            УНИФОРМА
+          <Link to="/" className="header__logo" aria-label="Униформа">
+            <img src={`${BASE}favicon.svg`} alt="" />
           </Link>
 
           <nav className="header__nav header__nav--desktop">
@@ -81,7 +81,9 @@ export default function Header({ onRequestClick }: HeaderProps) {
 
       <aside className={`drawer ${menuOpen ? "drawer--open" : ""}`} aria-hidden={!menuOpen}>
         <div className="drawer__top">
-          <span className="drawer__logo">УНИФОРМА</span>
+          <Link to="/" className="drawer__logo" aria-label="Униформа" onClick={closeMenu}>
+            <img src={`${BASE}favicon.svg`} alt="" />
+          </Link>
           <button className="drawer__close" aria-label="Закрыть меню" onClick={closeMenu}>
             <CloseIcon />
           </button>
