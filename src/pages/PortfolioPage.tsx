@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import dressImg from "../assets/images/dress-beige-collar.jpeg";
 import menEthnoImg from "../assets/images/men-shirt-ethno.jpeg";
 import apronFrontImg from "../assets/images/apron-beige-front.jpeg";
