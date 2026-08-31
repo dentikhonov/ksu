@@ -19,15 +19,16 @@
 .header__logo {
   display: flex;
   align-items: center;
-  width: 34px;
-  height: 34px;
+  width: 190px;
+  height: auto;
   flex-shrink: 0;
 }
 
 .header__logo img {
   display: block;
-  width: 34px;
+  width: 100%;
   height: auto;
+  filter: brightness(0) saturate(100%);
 }
 
 .header__nav--desktop ul {
@@ -103,14 +104,15 @@
 .drawer__logo {
   display: flex;
   align-items: center;
-  width: 34px;
-  height: 34px;
+  width: 190px;
+  height: auto;
 }
 
 .drawer__logo img {
   display: block;
-  width: 34px;
+  width: 100%;
   height: auto;
+  filter: brightness(0) saturate(100%);
 }
 
 @media (max-width: 900px) {
@@ -120,12 +122,12 @@
   }
 
   .header__logo {
-    width: 30px;
-    height: 30px;
+    width: min(58vw, 190px);
+    height: auto;
   }
 
   .header__logo img {
-    width: 30px;
+    width: 100%;
   }
 
   .header__nav--desktop,
