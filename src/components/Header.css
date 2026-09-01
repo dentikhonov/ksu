@@ -28,6 +28,7 @@
   display: block;
   width: 100%;
   height: auto;
+  filter: brightness(0) saturate(100%);
 }
 
 .header__nav--desktop ul {
@@ -111,6 +112,7 @@
   display: block;
   width: 100%;
   height: auto;
+  filter: brightness(0) saturate(100%);
 }
 
 @media (max-width: 900px) {
