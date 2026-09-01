@@ -1,16 +1,18 @@
 :root {
-  --color-bg: #f6f1e9;
-  --color-bg-alt: #efe8db;
-  --color-cream-card: #f0eadd;
-  --color-text: #2a241d;
-  --color-text-soft: #6b6255;
-  --color-text-faint: #9a9184;
-  --color-border: #e0d7c6;
-  --color-accent: #8a7a5f;
-  --color-btn-dark: #c9b99a;
-  --color-btn-dark-hover: #bcab89;
+  --color-bg: #f5efe8;
+  --color-bg-alt: #d5c6b9;
+  --color-cream-card: #f5efe8;
+  --color-nantucket: #b7d3e8;
+  --color-cacao: #432721;
+  --color-text: #1e1e1e;
+  --color-text-soft: #4f4b47;
+  --color-text-faint: #77716c;
+  --color-border: #cbbdb2;
+  --color-accent: #002fa7;
+  --color-btn-dark: #002fa7;
+  --color-btn-dark-hover: #001f73;
 
-  --font-serif: "Cormorant Garamond", "Georgia", serif;
+  --font-serif: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-sans: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   --container-width: 1280px;
@@ -35,6 +37,7 @@ body {
   color: var(--color-text);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img {
@@ -84,13 +87,14 @@ h1, h2, h3, p {
   align-items: center;
   gap: 8px;
   padding: 14px 24px;
-  border-radius: 999px;
+  border-radius: 0;
   border: 1px solid var(--color-border);
   background: transparent;
   color: var(--color-text);
   font-size: 14px;
   font-weight: 500;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  letter-spacing: 0.01em;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   white-space: nowrap;
 }
 
@@ -109,6 +113,7 @@ h1, h2, h3, p {
 .btn-solid {
   background: var(--color-btn-dark);
   border-color: var(--color-btn-dark);
+  color: #fff;
 }
 
 .btn-solid:hover {
@@ -119,7 +124,8 @@ h1, h2, h3, p {
   font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-text-soft);
+  color: var(--color-accent);
+  font-weight: 700;
 }
 
 @media (max-width: 640px) {

@@ -1,14 +1,14 @@
 .looks {
-  padding: 40px 0 60px;
+  padding: 104px 0;
 }
 
 .looks__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
-  background: var(--color-bg-alt);
-  border-radius: 24px;
-  padding: 40px;
+  background: var(--color-nantucket);
+  border-radius: 0;
+  padding: 48px;
 }
 
 .looks__intro {
@@ -21,7 +21,9 @@
 .looks__title {
   font-family: var(--font-serif);
   font-weight: 500;
-  font-size: clamp(28px, 3vw, 34px);
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
 }
 
 .looks__text {
@@ -33,11 +35,11 @@
 
 .looks__intro .btn {
   width: fit-content;
-  background: var(--color-cream-card);
+  background: var(--color-bg);
 }
 
 .looks__media {
-  border-radius: 16px;
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -105,7 +107,7 @@
       "stack"
       "tallright";
     padding: 24px 18px;
-    border-radius: 20px;
+    border-radius: 0;
     gap: 14px;
   }
 
@@ -131,7 +133,7 @@
   }
 
   .looks__media {
-    border-radius: 14px;
+    border-radius: 0;
   }
 
   .looks__stack {

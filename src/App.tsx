@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import CategoryGrid from "./components/CategoryGrid";
+import { AboutSection, AudienceSection } from "./components/BrandSections";
 import LooksSection from "./components/LooksSection";
 import FeaturesSection from "./components/FeaturesSection";
 import Footer from "./components/Footer";
@@ -10,11 +11,13 @@ import RequestModal from "./components/RequestModal";
 import Metrika from "./components/Metrika";
 import PortfolioPage from "./pages/PortfolioPage";
 
-function HomePage() {
+function HomePage({ onRequestClick }: { onRequestClick: () => void }) {
   return (
     <main>
-      <Hero />
+      <Hero onRequestClick={onRequestClick} />
+      <AboutSection />
       <CategoryGrid />
+      <AudienceSection />
       <FeaturesSection />
       <LooksSection />
     </main>
@@ -29,7 +32,7 @@ function App() {
       <Metrika />
       <Header onRequestClick={() => setModalOpen(true)} />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage onRequestClick={() => setModalOpen(true)} />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
       </Routes>
       <Footer />

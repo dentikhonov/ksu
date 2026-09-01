@@ -8,10 +8,10 @@ export default function Footer() {
     <footer className="footer" id="footer">
       <div className="container footer__top">
         <div className="footer__brand">
-          <p className="footer__logo">УНИФОРМА</p>
+          <img className="footer__logo" src={`${BASE}slap-logo.png`} alt="SLAP — Uniform & Textile" />
           <p className="footer__tagline">
-            Профессиональная форма для HoReCa. Проектируем и создаём с
-            вниманием к деталям и вашему бизнесу.
+            Студия униформы и текстиля для HoReCa. Текстиль, который собирает
+            образ заведения.
           </p>
           <div className="footer__socials">
             <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
@@ -30,34 +30,34 @@ export default function Footer() {
           <p className="footer__column-title">Меню</p>
           <ul>
             <li>
-              <a href={`${BASE}#catalog`}>Каталог</a>
+              <a href={`${BASE}#about`}>О студии</a>
             </li>
             <li>
-              <Link to="/portfolio">Портфолио</Link>
+              <a href={`${BASE}#catalog`}>Направления</a>
             </li>
             <li>
-              <a href={`${BASE}#looks`}>Образы</a>
+              <Link to="/portfolio">Проекты</Link>
             </li>
             <li>
-              <a href={`${BASE}#features`}>Пошив</a>
+              <a href={`${BASE}#features`}>Как работаем</a>
             </li>
           </ul>
         </div>
 
         <div className="footer__column">
-          <p className="footer__column-title">Каталог</p>
+          <p className="footer__column-title">Направления</p>
           <ul>
             <li>
-              <a href={`${BASE}#catalog`}>Женская форма</a>
+              <a href={`${BASE}#catalog`}>Униформа команды</a>
             </li>
             <li>
-              <a href={`${BASE}#catalog`}>Мужская форма</a>
+              <a href={`${BASE}#catalog`}>Фартуки</a>
             </li>
             <li>
-              <a href={`${BASE}#catalog`}>Этно-форма</a>
+              <a href={`${BASE}#catalog`}>Сервировочный текстиль</a>
             </li>
             <li>
-              <a href={`${BASE}#catalog`}>Сервисная форма</a>
+              <a href={`${BASE}#catalog`}>Интерьерный текстиль</a>
             </li>
           </ul>
         </div>
@@ -79,7 +79,7 @@ export default function Footer() {
       </div>
 
       <div className="container footer__bottom">
-        <span>© УНИФОРМА, {new Date().getFullYear()}</span>
+        <span>© SLAP UNIFORM &amp; TEXTILE, {new Date().getFullYear()}</span>
         <div className="footer__bottom-links">
           <span>Политика конфиденциальности</span>
           <span>Договор оферты</span>

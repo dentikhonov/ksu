@@ -15,7 +15,9 @@
 .portfolio-page__title {
   font-family: var(--font-serif);
   font-weight: 500;
-  font-size: clamp(32px, 3.6vw, 44px);
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
   margin-top: 10px;
 }
 
@@ -35,7 +37,7 @@
 
 .portfolio-page__tag {
   padding: 10px 18px;
-  border-radius: 999px;
+  border-radius: 0;
   border: 1px solid var(--color-border);
   background: transparent;
   font-size: 13px;
@@ -51,7 +53,7 @@
 .portfolio-page__tag--active {
   background: var(--color-btn-dark);
   border-color: var(--color-btn-dark);
-  color: var(--color-text);
+  color: #fff;
 }
 
 .portfolio-page__grid {
@@ -75,7 +77,7 @@
 
 .work-card__media {
   position: relative;
-  border-radius: 16px;
+  border-radius: 0;
   overflow: hidden;
   aspect-ratio: 3 / 4;
   width: 100%;
@@ -120,7 +122,7 @@
   bottom: 14px;
   z-index: 1;
   color: #f6f1e9;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -173,7 +175,7 @@
   }
 
   .work-card__media {
-    border-radius: 12px;
+    border-radius: 0;
   }
 
   .work-card__venue {

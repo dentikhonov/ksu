@@ -6,10 +6,10 @@ import "./Header.css";
 const BASE = import.meta.env.BASE_URL;
 
 const NAV_LINKS = [
-  { label: "Каталог", href: `${BASE}#catalog`, route: false },
-  { label: "Портфолио", href: "/portfolio", route: true },
-  { label: "Образы", href: `${BASE}#looks`, route: false },
-  { label: "Пошив", href: `${BASE}#features`, route: false },
+  { label: "О студии", href: `${BASE}#about`, route: false },
+  { label: "Направления", href: `${BASE}#catalog`, route: false },
+  { label: "Как работаем", href: `${BASE}#features`, route: false },
+  { label: "Проекты", href: "/portfolio", route: true },
   { label: "Контакты", href: `${BASE}#footer`, route: false },
 ];
 
@@ -58,7 +58,7 @@ export default function Header({ onRequestClick }: HeaderProps) {
 
           <div className="header__actions header__actions--desktop">
             <button className="btn btn-solid" onClick={onRequestClick}>
-              Оставить заявку
+              Обсудить проект
             </button>
           </div>
 
@@ -105,7 +105,7 @@ export default function Header({ onRequestClick }: HeaderProps) {
               onRequestClick();
             }}
           >
-            Оставить заявку
+            Обсудить проект
           </button>
         </div>
       </aside>

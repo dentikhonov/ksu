@@ -2,30 +2,31 @@ import heroImage from "../assets/images/apron-beige-front.jpeg";
 import Reveal from "./Reveal";
 import "./Hero.css";
 
-export default function Hero() {
+export default function Hero({ onRequestClick }: { onRequestClick: () => void }) {
   return (
     <section className="hero" id="top">
       <div className="container">
         <Reveal>
           <div className="hero__card">
           <div className="hero__text">
-            <p className="section-eyebrow">Форма для HoReCa</p>
+            <p className="section-eyebrow">Студия униформы и текстиля для HoReCa</p>
             <h1 className="hero__title">
-              Стиль в деталях,
-              <br />
-              сервис в форме
+              Текстиль, который собирает образ заведения
             </h1>
             <p className="hero__subtitle">
-              Продуманная форма для ресторанов, отелей и кафе — от концепции
-              до безупречного исполнения.
+              Создаём единую текстильную систему: от униформы команды до
+              сервировочного и интерьерного текстиля.
             </p>
-            <a href="#catalog" className="btn hero__cta">
-              Перейти в каталог
-              <ArrowIcon />
-            </a>
+            <div className="hero__actions">
+              <button type="button" className="btn btn-solid hero__cta" onClick={onRequestClick}>
+                Обсудить проект
+                <ArrowIcon />
+              </button>
+              <a href="#catalog" className="hero__text-link">Смотреть направления</a>
+            </div>
           </div>
           <div className="hero__media">
-            <img src={heroImage} alt="Форма для ресторанного персонала" />
+            <img src={heroImage} alt="Униформа SLAP для ресторанного персонала" />
           </div>
           </div>
         </Reveal>

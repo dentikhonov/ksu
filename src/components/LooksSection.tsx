@@ -12,13 +12,13 @@ export default function LooksSection() {
       <Reveal className="container">
       <div className="looks__grid">
         <div className="looks__intro">
-          <h2 className="looks__title">Наши образы</h2>
+          <p className="section-eyebrow">Кейсы и фото</p>
+          <h2 className="looks__title">Реализованные проекты</h2>
           <p className="looks__text">
-            Готовые образы для разных концепций и настроений. Вдохновение
-            для вашего пространства.
+            Форма на персонале, детали изделий и решения для проектов HoReCa.
           </p>
           <Link to="/portfolio" className="btn">
-            Смотреть портфолио
+            Смотреть проекты
             <ArrowIcon />
           </Link>
         </div>

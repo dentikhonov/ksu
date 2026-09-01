@@ -101,10 +101,10 @@ export default function PortfolioPage() {
         <Reveal>
           <div className="portfolio-page__head">
             <div>
-              <p className="section-eyebrow">Портфолио</p>
-              <h1 className="portfolio-page__title">Реализованные проекты</h1>
+              <p className="section-eyebrow">Кейсы и фото</p>
+              <h1 className="portfolio-page__title">Проекты SLAP</h1>
               <p className="portfolio-page__subtitle">
-                Форма, которую уже носят команды ресторанов, кафе и отелей.
+                Реальные проекты, детали изделий и униформа в ресторанной среде.
               </p>
             </div>
             <div className="portfolio-page__tags">
