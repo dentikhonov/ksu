@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import CategoryGrid from "./components/CategoryGrid";
 import { AboutSection, AudienceSection } from "./components/BrandSections";
+import EditorialShowcase from "./components/EditorialShowcase";
 import LooksSection from "./components/LooksSection";
 import FeaturesSection from "./components/FeaturesSection";
 import Footer from "./components/Footer";
@@ -15,6 +16,7 @@ function HomePage({ onRequestClick }: { onRequestClick: () => void }) {
   return (
     <main>
       <Hero onRequestClick={onRequestClick} />
+      <EditorialShowcase />
       <AboutSection />
       <CategoryGrid />
       <AudienceSection />
