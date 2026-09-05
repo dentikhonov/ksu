@@ -42,7 +42,7 @@ export default function EditorialShowcase() {
               <a href="#about" className="btn">О студии</a>
             </div>
             <div className="editorial-showcase__campaign-media">
-              <img src={campaignImg} alt="Униформа SLAP в ресторанной среде" loading="lazy" />
+              <img src={campaignImg} alt="Униформа SLAP в ресторанной среде" />
             </div>
           </div>
         </div>

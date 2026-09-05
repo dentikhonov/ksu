@@ -17,6 +17,9 @@
 
   --container-width: 1280px;
   --gutter: 24px;
+  --section-space: 88px;
+  --section-label-width: 240px;
+  --section-column-gap: 48px;
 }
 
 * {
@@ -131,5 +134,6 @@ h1, h2, h3, p {
 @media (max-width: 640px) {
   :root {
     --gutter: 18px;
+    --section-space: 64px;
   }
 }

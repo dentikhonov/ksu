@@ -13,6 +13,9 @@ const NAV_LINKS = [
   { label: "Контакты", href: `${BASE}#footer`, route: false },
 ];
 
+const LEFT_NAV_LINKS = NAV_LINKS.slice(0, 3);
+const RIGHT_NAV_LINKS = NAV_LINKS.slice(3);
+
 interface HeaderProps {
   onRequestClick: () => void;
 }
@@ -48,19 +51,21 @@ export default function Header({ onRequestClick }: HeaderProps) {
             <img src={`${BASE}slap-logo.png`} alt="" />
           </Link>
 
-          <nav className="header__nav header__nav--desktop">
+          <nav className="header__nav header__nav--desktop header__nav--left">
             <ul>
-              {NAV_LINKS.map((link) => (
+              {LEFT_NAV_LINKS.map((link) => (
                 <li key={link.href}>{renderLink(link)}</li>
               ))}
             </ul>
           </nav>
 
-          <div className="header__actions header__actions--desktop">
-            <button className="btn btn-solid" onClick={onRequestClick}>
-              Обсудить проект
-            </button>
-          </div>
+          <nav className="header__nav header__nav--desktop header__nav--right">
+            <ul>
+              {RIGHT_NAV_LINKS.map((link) => (
+                <li key={link.href}>{renderLink(link)}</li>
+              ))}
+            </ul>
+          </nav>
 
           <button
             className="header__burger"

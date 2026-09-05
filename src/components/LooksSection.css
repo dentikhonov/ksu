@@ -1,5 +1,5 @@
 .looks {
-  padding: 104px 0;
+  padding: var(--section-space) 0;
 }
 
 .looks__grid {

@@ -131,7 +131,7 @@ export default function PortfolioPage() {
                 onClick={() => setLightboxIndex(index)}
               >
                 <div className="work-card__media">
-                  <img src={work.image} alt={`${work.title} для «${work.venue}»`} loading="lazy" />
+                  <img src={work.image} alt={`${work.title} для «${work.venue}»`} />
                   <span className="work-card__venue">«{work.venue}»</span>
                 </div>
                 <span className="work-card__title">{work.title}</span>

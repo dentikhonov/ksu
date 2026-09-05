@@ -27,7 +27,7 @@ export default function CategoryGrid() {
               <article className={`direction-card direction-card--${direction.tone ?? "image"}`}>
                 {direction.image && (
                   <div className="direction-card__media">
-                    <img src={direction.image} alt={direction.title} loading="lazy" />
+                    <img src={direction.image} alt={direction.title} />
                   </div>
                 )}
                 <div className="direction-card__content">
